@@ -1,0 +1,80 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+# C/C++ source files
+*.c text diff=c
+*.cc text diff=cpp
+*.cpp text diff=cpp
+*.cxx text diff=cpp
+*.h text diff=c
+*.hh text diff=cpp
+*.hpp text diff=cpp
+# CMake
+CMakeLists.txt text
+*.cmake text
+# Shaders
+*.vert text
+*.frag text
+*.glsl text
+*.hlsl text
+# Documentation
+*.md text diff=markdown
+*.txt text
+*.rst text
+# Scripts
+*.sh text eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+# Config files
+*.json text
+*.xml text
+*.yaml text
+*.yml text
+*.ini text
+*.cfg text
+# Binary files - don't diff
+*.exe binary
+*.dll binary
+*.lib binary
+*.a binary
+*.so binary
+*.dylib binary
+*.pdb binary
+*.obj binary
+*.o binary
+# 3D Models - consider using Git LFS for large files
+*.glb filter=lfs diff=lfs merge=lfs -text
+*.gltf text
+*.fbx binary
+*.obj text
+*.mtl text
+*.dae text
+# Textures
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.tga binary
+*.dds binary
+*.hdr binary
+*.exr binary
+# Fonts
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+# Archives
+*.zip binary
+*.7z binary
+*.rar binary
+*.tar binary
+*.gz binary
+# Visual Studio
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.vcxproj.filters text eol=crlf
+# Git LFS (uncomment if using Git LFS for large assets)
+# *.glb filter=lfs diff=lfs merge=lfs -text
+# *.fbx filter=lfs diff=lfs merge=lfs -text
+# *.png filter=lfs diff=lfs merge=lfs -text
